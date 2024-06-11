@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon de Google</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./Google-favicon-2015.png">
+</head>
+<body>
+    <!-- Comenzaremos creando un <header> y dentro de él colocaremos un <nav> 
+        Las etiquetas semánticas van dentro del body-->
+    <header>
+        <nav> <!-- El nav va a contener un ul que contenerá a los elementos de la lista -->
+            <ul class="nav-right-section">
+                <!-- vada elemento li tendrá un elemnto ancla -->
+                <li>
+                    <a href="">Gmail</a>
+                </li>
+                <li>
+                    <a href="">Imágenes</a>
+                </li>
+                <li class="menu-icon">
+                    <a href=""></a>
+                </li>
+                <li class="">
+                    <a href=""><img src="https://lh3.googleusercontent.com/--vW-0NUZ9lI/AAAAAAAAAAI/AAAAAAAAAAA/ALKGfkkf5bZgtQDf9PxFVI4QHkTnjQlqpA/photo.jpg?sz=46" alt="imagen de perfil de google"></a>
+                </li>
+            </ul>
+        </nav>
+        <main> <!-- El main suele ser todo lo que está entre el header y el footer. En este caso tendrá tres secciones, una para la imagen principal, otra para el input principal y otra para los 2 botones-->
+            <section class="main-logo"> <!-- En esta sección tendremos la imágen de Google -->
+                <img src="./googlelogo_color_272x92dp.png" alt="logo principal de Google">
+                <!-- <a href="">
+                    <span class="dot">
+                        <img class="main-right-button" class="icon" src="./share_google.png" alt="">
+                    </span>
+                </a> -->
+            </section>
+            <section class="main-input">  <!-- Esta sección es la que tendrá la lupa, el input y los dos íconos de la derecha -->
+                <div class="main-input-container">
+                    <span class="search-icon">
+                    </span>
+                    <input type="text">
+                    <a class="micro-icon" href=""></a>
+                    <a class="camera-icon" href=""></a>
+                </div>
+            </section>
+            <section class="main-buttons"> <!-- En esta sección tendremos dos botones -->
+                <div>
+                    <button>Buscar con Google</button>
+                </div>
+                <div>
+                    <button>Voy a tener suerte</button>
+                </div>
+            </section>
+        </main>
+        <footer> <!-- El footer está dividido en dos partes, el footer-top tiene unas letras que dicen México, y la parte de abajo tiene una división derecha e izquierda-->
+            <section class="footer-top">
+                <span>México</span>
+            </section>
+            <ul>
+                <li class="footer-left">
+                    <a href="">Sobre Google</a>
+                </li>
+                <li>
+                    <a href="">Publicidad </a>
+                </li>
+                <li>
+                    <a href="">Negocios </a>
+                </li>
+                <li>
+                    <a href="">Cómo funciona Google </a>
+                </li>
+            </ul>
+            <ul class="footer-right">
+                <li>
+                    <a href="">Privacidad </a>
+                </li>
+                <li>
+                    <a href="">Condiciones </a>
+                </li>
+                <li>
+                    <a href="">Preferencias </a>
+                </li>
+            </ul>
+        </footer>
+    </header>
+</body>
+</html>

@@ -1,0 +1,242 @@
+/* comenzamos dando estilos al body, le quitaremos el margin y el padding. También vamos a dar un tamaño de letra de 13 pixeles y una fuente */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* a todos los elementos ancla del archivo le quitaremos la lína que los subraya y quiero que tengan una manita cuando pase mi mouse encima de ellos*/
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+/* al header le daremos estilo, de entrada el header debe de abarcar toda la pantalla y de altura tendrá 60 pixeles*/
+header{
+    width: 100%;
+    height: 60px;
+}
+/* selecciona una etiqueta nav dentro del header y lo que encuentres dentro va a tener un acomodo flex y el contenido quiero que se acomode horizontalmente (de manera justificada); en este caso, lo quiero a la izquierda*/
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+/* ahora vamos a modificar el elemento al cual le hemos dado la clase de "nav-right-section" 
+te
+ */
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;   
+}
+/* debemos de separar cada uno de los elemtnos a, para que no estén juntos y se pueda distinguir uno de otro, eso se hace poniendo un margin
+ */
+nav .nav-right-section a{
+    padding-left: 15px;
+    color: rgba(0,0,0,.87);
+}
+/*  para insertar el ícono de las aplicaciones tenemos que colocarlo en el background de nuestro li que le dimos una clase "menu-icon" y le daremos ciertas características, como url, que no se repita, que esté al centro, que su tamaño sea del contenido, tamaño y un margen de 10px*/
+nav .nav-right-section .menu-icon{
+    background-image: url(./apps_google.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    padding-left: 20px;
+    cursor: pointer;
+
+}
+
+/* a nuestra imágen que hemos colocado en el img, le tengo que dar estilos, como el redondeado de los bordes y un tamaño adecuado para el clon */
+nav .nav-right-section img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    
+}
+/* Daremos forma y estilos a main: margen arriba, centraremos las secciones */
+main{
+    margin-top: 52px;
+    text-align: center;
+}
+/* En la sección del logo vamos a poner una altura de 530 pixeles, lo vamos a centrar con un margin 0 y auto, lo cual indica que arriba y abajo del logo no tendremos margen pero a los lados se ajustará de manera automática, el espacio que quede después de poner la imágen se dividirá.
+También pondremos por debajo del elemento 35 pixeles para separar del input */
+main .main-logo{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    display: inline-block;
+}
+
+main .main-logo img{
+    width: 272px;
+}
+main .main-logo .main-right-button{
+    width: 18px;
+    height: 18px;
+    margin-top: 6px;
+    
+}
+
+/* Cuando existe un doodle en google se agrega un botón de compartir al lado derecho del doodle. Las siguientes dos selecciones le dan estilos a ese botón que en el HTML están después de la imágen. Se crea un .dot dentro de un span.
+main .main-logo .dot{
+    width: 30px;
+    height: 30px;
+    background-color: #f7f8f9;
+    border-radius: 50%;
+    display: inline-block;
+    justify-self: center;
+    align-self: center;
+}
+
+
+main .main-logo .dot:hover{
+    background-color: #d7d8d9;
+}     */
+
+/* Para nuestro input principal queremos que tenga un ancho de 530 pixeles, que esté centrado con el margin 0 auto. y que abajo del input se separe de los botones 35 pixeles */
+main .main-input{
+    width: 580px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+/* El contenedor que los imputs va a tener un ancho de 250pixeles, un border radius de 100 pixeles, borde sólido de 1 pixel color "gris" y acomodará lo que tenga dentro de manera horizontal, por lo que tendrá un display flex. Los elementos que tenga los justificará horizontalmente al centro y los alineará verticalmente al centro*/
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Ahora le vamos a dar estilos al input, le vamos a dar un ancho un poco más pequeño que su padre, altura de 40 pixeles y le quitaré dos cosas más, el borde y el outline. El borde suele estar a la vista con solo existir y el outline se ve solo cuando se selecciona el input, en este caso no queremos que se vea ninguno de los dos bordes*/
+main .main-input input{
+    width: 450px;
+    height: 42px;
+    border: none;
+    outline: none;  
+}
+
+/* Acá nombramos que cuando coloquemos el mouse encima del input se pondrá un shadow */
+main .main-input-container:hover{
+   box-shadow: 0 1px 6px 0 #20212447; 
+   border-color: #dfe1e500;
+}
+
+main .main-input .search-icon{
+    background-image: url('./search_24dp.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 23px;
+    height: 23px;
+    margin-left: 10px;
+}
+
+main .main-input .micro-icon{
+    background-image: url('./micro_google.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+
+main .main-input .camera-icon{
+    background-image: url('./Google_Lens_Icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+/* estilos para los botones */
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+    
+    /* display: flex;
+    justify-content: center; */
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 0;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+/* necesitamos cambiar los colores a la versión actual de google*/
+
+main .main-buttons button:hover{
+    border: 1px solid #dadce0;
+    box-shadow: #c92929;
+    color: #000000;
+}
+/* a la sección de footer le vamos a dar un display de grid, el cual será de dos fracciones en columnas y solitas se acomodarán la sección top y las dos secciones left y right por debajo.
+Necesitamos que ocupe toda la pantalla, con una altura de 70 pixeles, para que se vaya hasta abajo de nuestra págia como la mayoría de los footers debemos de ponerle una position absoluta y un "bottom de 0". Para que el footer tenga los colores necesarios de background y de manera horizontal modificamos el background color y el border top. 
+Posterior a la elaboración se agregó un padding para acomodarlo mejor*/
+footer{
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    padding: 10px;
+
+}
+
+footer .footer-top{
+    grid-column: 1/3;
+    padding: 10px;
+    border-bottom: 1px solid #e4e4e4;;
+
+}
+
+footer .footer-top span{
+    padding: 10px;
+    color: #3c4043;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+/* Para acomodar el texto dentro de cada sección se coloca un justificante a la derecha y a la izquierda */
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    margin: 10px;
+    color: #3c4043;
+
+}
